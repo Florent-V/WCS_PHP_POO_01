@@ -40,7 +40,7 @@ echo $car->getEnergyLevel()  . '<br>';
 echo $car->start();
 var_dump($car);
 
-$car2 = new Car(nbSeats:-7, energy:'LPG');
+$car2 = new Car(nbSeats:-7, energy:'LPG', color:'blue');
 var_dump($car2);
 
 echo $car->forward();

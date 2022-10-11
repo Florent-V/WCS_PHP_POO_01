@@ -14,7 +14,7 @@ class Car
 
     /* CONSTRUCTEUR */
 
-    public function __construct(string $color='blue', int $nbSeats=4, string $energy='diesel')
+    public function __construct(string $color, int $nbSeats, string $energy)
     {
         $this->color = $color;
         $this->setNbSeats($nbSeats);
@@ -108,10 +108,8 @@ class Car
         if ($energyLevel > 100) {
             $this->energyLevel = 100;
         } elseif ($energyLevel < 0) {
-            echo 'ici';
             $this->energyLevel = 0;
         } else {
-            echo 'là';
             $this->energyLevel = $energyLevel;
         }
     }
